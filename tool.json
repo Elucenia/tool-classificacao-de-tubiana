@@ -1,0 +1,206 @@
+{
+  "tool": {
+    "id": "classificacao-de-tubiana",
+    "title": "Classificação de Tubiana (Dupuytren)",
+    "short": "Estádio da contratura de Dupuytren por raio",
+    "desc": "Classificação de Tubiana para a doença de Dupuytren: some os déficits de extensão da MCF, IFP e IFD de cada dedo e obtenha o estádio de 0 a 4.",
+    "lead": "Gradua a contratura da doença de Dupuytren em cada raio pela soma dos déficits de extensão das articulações do dedo.",
+    "spec": [
+      "cirurgia-da-mao",
+      "ortopedia-e-traumatologia",
+      "cirurgia-plastica"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "mcf",
+        "Déficit de extensão da MCF (metacarpofalângica)",
+        "num",
+        {
+          "min": 0,
+          "max": 120,
+          "step": 1,
+          "unit": "graus",
+          "ph": "30"
+        }
+      ],
+      [
+        "ifp",
+        "Déficit de extensão da IFP (interfalângica proximal)",
+        "num",
+        {
+          "min": 0,
+          "max": 130,
+          "step": 1,
+          "unit": "graus",
+          "ph": "20"
+        }
+      ],
+      [
+        "ifd",
+        "Déficit de extensão da IFD (ou hiperextensão)",
+        "num",
+        {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "graus",
+          "ph": "0"
+        }
+      ],
+      [
+        "nodulo",
+        "Há nódulo ou corda palpável?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ]
+    ],
+    "formula": "<p>Déficit total do raio = déficit de extensão da MCF + IFP + IFD (a hiperextensão da IFD entra como déficit). Estádios: <strong>0</strong> sem lesão; <strong>N</strong> nódulo sem contratura; <strong>1</strong> até 45°; <strong>2</strong> de 45 a 90°; <strong>3</strong> de 90 a 135°; <strong>4</strong> acima de 135°.</p>",
+    "table": [
+      [
+        "Estádio",
+        "Déficit total de extensão do raio"
+      ],
+      [
+        "0",
+        "Sem lesão"
+      ],
+      [
+        "N",
+        "Nódulo ou corda, sem contratura"
+      ],
+      [
+        "1",
+        "0 a 45°"
+      ],
+      [
+        "2",
+        "45 a 90°"
+      ],
+      [
+        "3",
+        "90 a 135°"
+      ],
+      [
+        "4",
+        "&gt; 135°"
+      ]
+    ],
+    "table_note": "Nos valores exatos de 45°, 90° e 135°, a calculadora usa o estádio menor.",
+    "tips": [
+      "Meça com goniômetro no dorso de cada articulação, com o punho em posição neutra.",
+      "Contratura da MCF ≥ 30° ou qualquer contratura da IFP (teste da mesa de Hueston positivo) é a indicação clássica de tratamento.",
+      "A contratura da IFP responde pior ao tratamento e recidiva mais que a da MCF: registre as duas separadamente.",
+      "Classifique cada raio separadamente; a soma dos raios serve para acompanhar a evolução e o resultado do tratamento."
+    ],
+    "sources": [
+      [
+        "Tubiana R. Evaluation des déformations dans la maladie de Dupuytren (Evaluation of deformities in Dupuytren disease). Ann Chir Main, 1986.",
+        "https://doi.org/10.1016/s0753-9053(86)80043-6"
+      ]
+    ],
+    "cases": [
+      [
+        "MCF 30°, IFP e IFD 0°: 30° = estádio 1",
+        {
+          "mcf": 30,
+          "ifp": 0,
+          "ifd": 0,
+          "nodulo": "1"
+        },
+        {
+          "raw": {
+            "total": 30,
+            "estadio": "1"
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "Limite: MCF 40° + IFP 50° = 90° = estádio 2",
+        {
+          "mcf": 40,
+          "ifp": 50,
+          "ifd": 0,
+          "nodulo": "1"
+        },
+        {
+          "raw": {
+            "total": 90,
+            "estadio": "2"
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "MCF 60° + IFP 70° + IFD 20° = 150° = estádio 4",
+        {
+          "mcf": 60,
+          "ifp": 70,
+          "ifd": 20,
+          "nodulo": "1"
+        },
+        {
+          "raw": {
+            "total": 150,
+            "estadio": "4"
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Nódulo palmar sem contratura: estádio N",
+        {
+          "mcf": 0,
+          "ifp": 0,
+          "ifd": 0,
+          "nodulo": "1"
+        },
+        {
+          "raw": {
+            "total": 0,
+            "estadio": "N"
+          },
+          "level": "low"
+        }
+      ]
+    ],
+    "batch": "cirurgia-sentidos",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cirurgia-sentidos",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cirurgia-sentidos.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cirurgia-sentidos.php",
+    "sha256": "21fc91a9a8187a66496f68c2ac8fbdd20a65ceeea519687c963b857f72640866",
+    "bytes": 89063
+  },
+  "clinicalValidation": "not-performed"
+}

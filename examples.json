@@ -1,0 +1,94 @@
+[
+  {
+    "label": "MCF 30°, IFP e IFD 0°: 30° = estádio 1",
+    "input": {
+      "mcf": 30,
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "raw": {
+        "total": 30,
+        "estadio": "1"
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "mcf": 30,
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Limite: MCF 40° + IFP 50° = 90° = estádio 2",
+    "input": {
+      "mcf": 40,
+      "ifp": 50,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "raw": {
+        "total": 90,
+        "estadio": "2"
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "mcf": 40,
+      "ifp": 50,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "MCF 60° + IFP 70° + IFD 20° = 150° = estádio 4",
+    "input": {
+      "mcf": 60,
+      "ifp": 70,
+      "ifd": 20,
+      "nodulo": "1"
+    },
+    "expected": {
+      "raw": {
+        "total": 150,
+        "estadio": "4"
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "mcf": 60,
+      "ifp": 70,
+      "ifd": 20,
+      "nodulo": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Nódulo palmar sem contratura: estádio N",
+    "input": {
+      "mcf": 0,
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "raw": {
+        "total": 0,
+        "estadio": "N"
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "mcf": 0,
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expandedZeroOptions": []
+  }
+]
