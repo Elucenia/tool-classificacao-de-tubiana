@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-classificacao-de-tubiana",
   "version": "0.1.0",
-  "description": "Classificação de Tubiana (Dupuytren) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Classificação de Tubiana (Dupuytren) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
