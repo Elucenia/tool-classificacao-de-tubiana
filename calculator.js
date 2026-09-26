@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-classificacao-de-tubiana · Elucenia · https://github.com/Elucenia/tool-classificacao-de-tubiana
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"classificacao-de-tubiana","title":"Classificação de Tubiana (Dupuytren)","fields":[["mcf","Déficit de extensão da MCF (metacarpofalângica)","num",{"min":0,"max":120,"step":1,"unit":"graus","ph":"30"}],["ifp","Déficit de extensão da IFP (interfalângica proximal)","num",{"min":0,"max":130,"step":1,"unit":"graus","ph":"20"}],["ifd","Déficit de extensão da IFD (ou hiperextensão)","num",{"min":0,"max":100,"step":1,"unit":"graus","ph":"0"}],["nodulo","Há nódulo ou corda palpável?","radio",{"opts":{"0":"Não","1":"Sim"}}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
