@@ -1,0 +1,889 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "classificacao-de-tubiana",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/classificacao-de-tubiana/calculator.js",
+    "sha256": "79fac608581b14371acc4f51dd5466191f731e1d22576b028b69449143ec1026",
+    "bytes": 5423
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 4,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "classificacao-de-tubiana",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "MCF 30°, IFP e IFD 0°: 30° = estádio 1",
+      "originalInput": {
+        "mcf": 30,
+        "ifp": 0,
+        "ifd": 0,
+        "nodulo": "1"
+      },
+      "input": {
+        "mcf": 30,
+        "ifp": 0,
+        "ifd": 0,
+        "nodulo": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "total": 30,
+          "estadio": "1"
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "1",
+          ""
+        ],
+        "label": "Estádio de Tubiana do raio",
+        "raw": {
+          "total": 30,
+          "estadio": "1"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/classificacao-de-tubiana/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "mcf": 30,
+            "ifp": 0,
+            "ifd": 0,
+            "nodulo": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/classificacao-de-tubiana/calculate",
+          "startedAt": "2026-10-05T17:36:10.375Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "classificacao-de-tubiana",
+              "main": [
+                "1",
+                ""
+              ],
+              "label": "Estádio de Tubiana do raio",
+              "raw": {
+                "total": 30,
+                "estadio": "1"
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "e13cbe78a2e4dd6a69dde08f27ccb837d8eceaec311fb319dfe58d4ec1a8db82",
+          "bytes": 168,
+          "elapsedMs": 4.082299999998213
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/classificacao-de-tubiana/calculate",
+        "startedAt": "2026-10-05T17:36:10.375Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "classificacao-de-tubiana",
+            "main": [
+              "1",
+              ""
+            ],
+            "label": "Estádio de Tubiana do raio",
+            "raw": {
+              "total": 30,
+              "estadio": "1"
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "e13cbe78a2e4dd6a69dde08f27ccb837d8eceaec311fb319dfe58d4ec1a8db82",
+        "bytes": 168,
+        "elapsedMs": 4.082299999998213
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.total",
+            "expected": 30,
+            "obtained": 30,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.estadio",
+            "expected": "1",
+            "obtained": "1",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.total",
+            "expected": 30,
+            "obtained": 30,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.estadio",
+            "expected": "1",
+            "obtained": "1",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1",
+            "obtained": "1",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "classificacao-de-tubiana",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Limite: MCF 40° + IFP 50° = 90° = estádio 2",
+      "originalInput": {
+        "mcf": 40,
+        "ifp": 50,
+        "ifd": 0,
+        "nodulo": "1"
+      },
+      "input": {
+        "mcf": 40,
+        "ifp": 50,
+        "ifd": 0,
+        "nodulo": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "total": 90,
+          "estadio": "2"
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "2",
+          ""
+        ],
+        "label": "Estádio de Tubiana do raio",
+        "raw": {
+          "total": 90,
+          "estadio": "2"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/classificacao-de-tubiana/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "mcf": 40,
+            "ifp": 50,
+            "ifd": 0,
+            "nodulo": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/classificacao-de-tubiana/calculate",
+          "startedAt": "2026-10-05T17:36:10.674Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "classificacao-de-tubiana",
+              "main": [
+                "2",
+                ""
+              ],
+              "label": "Estádio de Tubiana do raio",
+              "raw": {
+                "total": 90,
+                "estadio": "2"
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "6301ce8969750b6e9b80c1034bee33136276b733ce4ca78da0b219cdcdfc77d8",
+          "bytes": 168,
+          "elapsedMs": 5.952099999998609
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/classificacao-de-tubiana/calculate",
+        "startedAt": "2026-10-05T17:36:10.674Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "classificacao-de-tubiana",
+            "main": [
+              "2",
+              ""
+            ],
+            "label": "Estádio de Tubiana do raio",
+            "raw": {
+              "total": 90,
+              "estadio": "2"
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "6301ce8969750b6e9b80c1034bee33136276b733ce4ca78da0b219cdcdfc77d8",
+        "bytes": 168,
+        "elapsedMs": 5.952099999998609
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.total",
+            "expected": 90,
+            "obtained": 90,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.estadio",
+            "expected": "2",
+            "obtained": "2",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.total",
+            "expected": 90,
+            "obtained": 90,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.estadio",
+            "expected": "2",
+            "obtained": "2",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "2",
+            "obtained": "2",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "classificacao-de-tubiana",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "MCF 60° + IFP 70° + IFD 20° = 150° = estádio 4",
+      "originalInput": {
+        "mcf": 60,
+        "ifp": 70,
+        "ifd": 20,
+        "nodulo": "1"
+      },
+      "input": {
+        "mcf": 60,
+        "ifp": 70,
+        "ifd": 20,
+        "nodulo": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "total": 150,
+          "estadio": "4"
+        },
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "4",
+          ""
+        ],
+        "label": "Estádio de Tubiana do raio",
+        "raw": {
+          "total": 150,
+          "estadio": "4"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/classificacao-de-tubiana/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "mcf": 60,
+            "ifp": 70,
+            "ifd": 20,
+            "nodulo": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/classificacao-de-tubiana/calculate",
+          "startedAt": "2026-10-05T17:36:10.988Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "classificacao-de-tubiana",
+              "main": [
+                "4",
+                ""
+              ],
+              "label": "Estádio de Tubiana do raio",
+              "raw": {
+                "total": 150,
+                "estadio": "4"
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "83e274a39688ff7506ce35a9b9d680a0a15b7a7043ed73a90bb43908a3a38337",
+          "bytes": 169,
+          "elapsedMs": 2.8426999999974214
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/classificacao-de-tubiana/calculate",
+        "startedAt": "2026-10-05T17:36:10.988Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "classificacao-de-tubiana",
+            "main": [
+              "4",
+              ""
+            ],
+            "label": "Estádio de Tubiana do raio",
+            "raw": {
+              "total": 150,
+              "estadio": "4"
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "83e274a39688ff7506ce35a9b9d680a0a15b7a7043ed73a90bb43908a3a38337",
+        "bytes": 169,
+        "elapsedMs": 2.8426999999974214
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.total",
+            "expected": 150,
+            "obtained": 150,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.estadio",
+            "expected": "4",
+            "obtained": "4",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.total",
+            "expected": 150,
+            "obtained": 150,
+            "tolerance": 1.5e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.estadio",
+            "expected": "4",
+            "obtained": "4",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "4",
+            "obtained": "4",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "classificacao-de-tubiana",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Nódulo palmar sem contratura: estádio N",
+      "originalInput": {
+        "mcf": 0,
+        "ifp": 0,
+        "ifd": 0,
+        "nodulo": "1"
+      },
+      "input": {
+        "mcf": 0,
+        "ifp": 0,
+        "ifd": 0,
+        "nodulo": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "total": 0,
+          "estadio": "N"
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "N",
+          ""
+        ],
+        "label": "Estádio de Tubiana do raio",
+        "raw": {
+          "total": 0,
+          "estadio": "N"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/classificacao-de-tubiana/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "mcf": 0,
+            "ifp": 0,
+            "ifd": 0,
+            "nodulo": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/classificacao-de-tubiana/calculate",
+          "startedAt": "2026-10-05T17:36:11.302Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "classificacao-de-tubiana",
+              "main": [
+                "N",
+                ""
+              ],
+              "label": "Estádio de Tubiana do raio",
+              "raw": {
+                "total": 0,
+                "estadio": "N"
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "a2e7bfc8692bf97e4261283e87fe6962586721e6d4b172a07b72ec1e3ae09ca2",
+          "bytes": 167,
+          "elapsedMs": 3.2040999999990163
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/classificacao-de-tubiana/calculate",
+        "startedAt": "2026-10-05T17:36:11.302Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "classificacao-de-tubiana",
+            "main": [
+              "N",
+              ""
+            ],
+            "label": "Estádio de Tubiana do raio",
+            "raw": {
+              "total": 0,
+              "estadio": "N"
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "a2e7bfc8692bf97e4261283e87fe6962586721e6d4b172a07b72ec1e3ae09ca2",
+        "bytes": 167,
+        "elapsedMs": 3.2040999999990163
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.total",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.estadio",
+            "expected": "N",
+            "obtained": "N",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.total",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.estadio",
+            "expected": "N",
+            "obtained": "N",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "N",
+            "obtained": "N",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
