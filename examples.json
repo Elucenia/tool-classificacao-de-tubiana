@@ -1,6 +1,15 @@
 [
   {
-    "label": "MCF 30°, IFP e IFD 0°: 30° = estádio 1",
+    "id": "classificacao-de-tubiana",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "MCF 30°, IFP e IFD 0°: 30° = estádio 1",
+    "originalInput": {
+      "mcf": 30,
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": "1"
+    },
     "input": {
       "mcf": 30,
       "ifp": 0,
@@ -14,16 +23,37 @@
       },
       "level": "mid"
     },
+    "recordedResult": {
+      "main": [
+        "1",
+        ""
+      ],
+      "label": "Estádio de Tubiana do raio",
+      "raw": {
+        "total": 30,
+        "estadio": "1"
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "classificacao-de-tubiana",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Limite: MCF 40° + IFP 50° = 90° = estádio 2",
     "originalInput": {
-      "mcf": 30,
-      "ifp": 0,
+      "mcf": 40,
+      "ifp": 50,
       "ifd": 0,
       "nodulo": "1"
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Limite: MCF 40° + IFP 50° = 90° = estádio 2",
     "input": {
       "mcf": 40,
       "ifp": 50,
@@ -37,16 +67,37 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "mcf": 40,
-      "ifp": 50,
-      "ifd": 0,
-      "nodulo": "1"
+    "recordedResult": {
+      "main": [
+        "2",
+        ""
+      ],
+      "label": "Estádio de Tubiana do raio",
+      "raw": {
+        "total": 90,
+        "estadio": "2"
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "MCF 60° + IFP 70° + IFD 20° = 150° = estádio 4",
+    "id": "classificacao-de-tubiana",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "MCF 60° + IFP 70° + IFD 20° = 150° = estádio 4",
+    "originalInput": {
+      "mcf": 60,
+      "ifp": 70,
+      "ifd": 20,
+      "nodulo": "1"
+    },
     "input": {
       "mcf": 60,
       "ifp": 70,
@@ -60,16 +111,37 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "mcf": 60,
-      "ifp": 70,
-      "ifd": 20,
-      "nodulo": "1"
+    "recordedResult": {
+      "main": [
+        "4",
+        ""
+      ],
+      "label": "Estádio de Tubiana do raio",
+      "raw": {
+        "total": 150,
+        "estadio": "4"
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Nódulo palmar sem contratura: estádio N",
+    "id": "classificacao-de-tubiana",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Nódulo palmar sem contratura: estádio N",
+    "originalInput": {
+      "mcf": 0,
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": "1"
+    },
     "input": {
       "mcf": 0,
       "ifp": 0,
@@ -83,12 +155,24 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "mcf": 0,
-      "ifp": 0,
-      "ifd": 0,
-      "nodulo": "1"
+    "recordedResult": {
+      "main": [
+        "N",
+        ""
+      ],
+      "label": "Estádio de Tubiana do raio",
+      "raw": {
+        "total": 0,
+        "estadio": "N"
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

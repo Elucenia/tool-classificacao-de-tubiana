@@ -1,0 +1,496 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field mcf",
+    "input": {
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "mcf"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field mcf",
+    "input": {
+      "mcf": "",
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "mcf"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" mcf",
+    "input": {
+      "mcf": "NaN",
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "mcf"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" mcf",
+    "input": {
+      "mcf": "Infinity",
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "mcf"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" mcf",
+    "input": {
+      "mcf": "1e309",
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "mcf"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" mcf",
+    "input": {
+      "mcf": "invalid",
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "mcf"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} mcf",
+    "input": {
+      "mcf": {},
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "mcf"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true mcf",
+    "input": {
+      "mcf": true,
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "mcf"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum mcf",
+    "input": {
+      "mcf": -1,
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "mcf"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum mcf",
+    "input": {
+      "mcf": 132,
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "mcf"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ifp",
+    "input": {
+      "mcf": 30,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ifp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ifp",
+    "input": {
+      "mcf": 30,
+      "ifp": "",
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ifp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" ifp",
+    "input": {
+      "mcf": 30,
+      "ifp": "NaN",
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ifp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" ifp",
+    "input": {
+      "mcf": 30,
+      "ifp": "Infinity",
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ifp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" ifp",
+    "input": {
+      "mcf": 30,
+      "ifp": "1e309",
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ifp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" ifp",
+    "input": {
+      "mcf": 30,
+      "ifp": "invalid",
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ifp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} ifp",
+    "input": {
+      "mcf": 30,
+      "ifp": {},
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ifp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true ifp",
+    "input": {
+      "mcf": 30,
+      "ifp": true,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ifp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum ifp",
+    "input": {
+      "mcf": 30,
+      "ifp": -1,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ifp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum ifp",
+    "input": {
+      "mcf": 30,
+      "ifp": 143,
+      "ifd": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ifp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ifd",
+    "input": {
+      "mcf": 30,
+      "ifp": 0,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ifd"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ifd",
+    "input": {
+      "mcf": 30,
+      "ifp": 0,
+      "ifd": "",
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ifd"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" ifd",
+    "input": {
+      "mcf": 30,
+      "ifp": 0,
+      "ifd": "NaN",
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ifd"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" ifd",
+    "input": {
+      "mcf": 30,
+      "ifp": 0,
+      "ifd": "Infinity",
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ifd"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" ifd",
+    "input": {
+      "mcf": 30,
+      "ifp": 0,
+      "ifd": "1e309",
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ifd"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" ifd",
+    "input": {
+      "mcf": 30,
+      "ifp": 0,
+      "ifd": "invalid",
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ifd"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} ifd",
+    "input": {
+      "mcf": 30,
+      "ifp": 0,
+      "ifd": {},
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ifd"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true ifd",
+    "input": {
+      "mcf": 30,
+      "ifp": 0,
+      "ifd": true,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ifd"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum ifd",
+    "input": {
+      "mcf": 30,
+      "ifp": 0,
+      "ifd": -1,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ifd"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum ifd",
+    "input": {
+      "mcf": 30,
+      "ifp": 0,
+      "ifd": 110,
+      "nodulo": "1"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ifd"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field nodulo",
+    "input": {
+      "mcf": 30,
+      "ifp": 0,
+      "ifd": 0
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "nodulo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field nodulo",
+    "input": {
+      "mcf": 30,
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "nodulo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option nodulo",
+    "input": {
+      "mcf": 30,
+      "ifp": 0,
+      "ifd": 0,
+      "nodulo": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "nodulo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

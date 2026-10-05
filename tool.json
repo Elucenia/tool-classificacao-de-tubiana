@@ -5,12 +5,12 @@
     "short": "Estádio da contratura de Dupuytren por raio",
     "desc": "Classificação de Tubiana para a doença de Dupuytren: some os déficits de extensão da MCF, IFP e IFD de cada dedo e obtenha o estádio de 0 a 4.",
     "lead": "Gradua a contratura da doença de Dupuytren em cada raio pela soma dos déficits de extensão das articulações do dedo.",
+    "kind": "Calculadora",
     "spec": [
       "cirurgia-da-mao",
       "ortopedia-e-traumatologia",
       "cirurgia-plastica"
     ],
-    "tier": 1,
     "fields": [
       [
         "mcf",
@@ -61,43 +61,6 @@
       ]
     ],
     "formula": "<p>Déficit total do raio = déficit de extensão da MCF + IFP + IFD (a hiperextensão da IFD entra como déficit). Estádios: <strong>0</strong> sem lesão; <strong>N</strong> nódulo sem contratura; <strong>1</strong> até 45°; <strong>2</strong> de 45 a 90°; <strong>3</strong> de 90 a 135°; <strong>4</strong> acima de 135°.</p>",
-    "table": [
-      [
-        "Estádio",
-        "Déficit total de extensão do raio"
-      ],
-      [
-        "0",
-        "Sem lesão"
-      ],
-      [
-        "N",
-        "Nódulo ou corda, sem contratura"
-      ],
-      [
-        "1",
-        "0 a 45°"
-      ],
-      [
-        "2",
-        "45 a 90°"
-      ],
-      [
-        "3",
-        "90 a 135°"
-      ],
-      [
-        "4",
-        "&gt; 135°"
-      ]
-    ],
-    "table_note": "Nos valores exatos de 45°, 90° e 135°, a calculadora usa o estádio menor.",
-    "tips": [
-      "Meça com goniômetro no dorso de cada articulação, com o punho em posição neutra.",
-      "Contratura da MCF ≥ 30° ou qualquer contratura da IFP (teste da mesa de Hueston positivo) é a indicação clássica de tratamento.",
-      "A contratura da IFP responde pior ao tratamento e recidiva mais que a da MCF: registre as duas separadamente.",
-      "Classifique cada raio separadamente; a soma dos raios serve para acompanhar a evolução e o resultado do tratamento."
-    ],
     "sources": [
       [
         "Tubiana R. Evaluation des déformations dans la maladie de Dupuytren (Evaluation of deformities in Dupuytren disease). Ann Chir Main, 1986.",
@@ -170,9 +133,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -181,17 +141,465 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T20:21:47.319Z",
+      "total": 652,
+      "passed": 652,
+      "sourceRowCount": 652,
+      "uniqueApiInputCount": 652,
+      "sourceContextCount": 652,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "scope": "Exact integer totalDegrees for selected nonthumb magnitudes within total200°. No stages/level/verdict or hand-wide summary approval.",
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "01a3a72e07044a6a38b05126e3145bc9a90a5dc68909fe94ab7fbf3fa09825d9",
+        "total": 652,
+        "bankRowCount": 652,
+        "uniqueApiInputCount": 652,
+        "sourceContextCount": 652,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/six-neuromotor-independent-expectations-final29.json",
+            "sha256": "f4dad20a9ba35cd815eb875728013287b62d5259b3f73156a9a1a00fb4a094b4"
+          },
+          {
+            "file": "reports/review-20261003/six-neuromotor-primary-source-review-final29.json",
+            "sha256": "3be675e6df346996e30e38384bd1d8af72f23b9678413687b5c26881cff563d0"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/six-neuromotor-independent-source-check-final29.json",
+          "sha256": "b0d0841319b5a2323ff6d6939358aa9c00bb935fb46c0cbc64138974a521d736"
+        },
+        "packagingRequirement": "Byte-exact complete raw-only bank; source28 and any later source/rubric changes are composed separately."
+      },
+      "sources": [
+        {
+          "review": {
+            "file": "reports/review-20261003/six-neuromotor-primary-source-review-final29.json",
+            "sha256": "3be675e6df346996e30e38384bd1d8af72f23b9678413687b5c26881cff563d0"
+          },
+          "item": {
+            "id": "classificacao-de-tubiana",
+            "verifiedEdition": "1974 author chapter sum only;1986 identity/abstract indexed",
+            "sourceIds": [
+              "tubiana-1974"
+            ],
+            "verified": "For a nonthumb finger/ray, add three joint-extension deficits; fixedDIP hyperextension magnitude also contributes positively. Degree arithmetic only. Thumb/firstweb and additional lesions/modifiers are different measurements.",
+            "unresolved": [
+              "Original1986 fulltext was not obtained. Its exact inclusive boundaries are not certified.",
+              "Printed1974 stage3 upper155° conflicts with stage4 >135°; no categorical expectation for that overlap.",
+              "Printed1974 N text says established flexion deformity, whereas figures and next page describe nodule without deformity. No N-rule oracle inferred.",
+              "The local form accepts three positive magnitudes; no measurement/origin distinction is inferred from arithmetic.",
+              "1974 chapter cannot silently replace1986 edition or certify operation indication."
+            ],
+            "findings": [
+              {
+                "type": "primary-source-internal-conflict",
+                "field": "grade intervals",
+                "detail": "Visual1974p45 shows90–155 versus >135, not an OCR-only artifact."
+              }
+            ],
+            "proofScope": "Exact integer totalDegrees for selected nonthumb magnitudes within total200°. No stages/level/verdict or hand-wide summary approval.",
+            "clinicalApproval": "not-performed",
+            "professionalLanguageApproval": "not-performed",
+            "rightsApproval": "not-performed",
+            "fullMethodConformance": "not-performed",
+            "calculatorImportsPerformed": false,
+            "sourceBinding": {
+              "id": "classificacao-de-tubiana",
+              "recordSha256": "b03136f126c5ac01789a8c5d05c4673fb8e57dfbb38b66c10203d4c2abc58ad0",
+              "frozenRecordFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/selected-records/classificacao-de-tubiana.json",
+              "frozenRecordSha256": "108b0b10c853449db04d93b72d7440b2f2f03bc64e9232553fb7981f08d9890e",
+              "methodVersion": "Tubiana 1986:déficit total deextensão, classes 0/N/I–IV, cortes 45/90/135 graus",
+              "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3963905/",
+              "adapters": [
+                {
+                  "file": "apps/website/private/tool-code/classificacao-de-tubiana/calculator.js",
+                  "sha256": "79fac608581b14371acc4f51dd5466191f731e1d22576b028b69449143ec1026",
+                  "bytes": 5423,
+                  "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/website/private/tool-code/classificacao-de-tubiana/calculator.js",
+                  "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                },
+                {
+                  "file": "apps/dashboard/private/tool-code/classificacao-de-tubiana/calculator.js",
+                  "sha256": "79fac608581b14371acc4f51dd5466191f731e1d22576b028b69449143ec1026",
+                  "bytes": 5423,
+                  "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/dashboard/private/tool-code/classificacao-de-tubiana/calculator.js",
+                  "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                },
+                {
+                  "file": "apps/command-center/private/tool-code/classificacao-de-tubiana/calculator.js",
+                  "sha256": "79fac608581b14371acc4f51dd5466191f731e1d22576b028b69449143ec1026",
+                  "bytes": 5423,
+                  "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/command-center/private/tool-code/classificacao-de-tubiana/calculator.js",
+                  "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                }
+              ]
+            }
+          },
+          "sources": [
+            {
+              "id": "tubiana-1974",
+              "url": "https://dupuytrens.org/DupPDFs/1974_Tubiana.pdf",
+              "file": "C:\\FGX Dev\\Elucenia\\ELUCENIA\\reports\\review-20261003\\six-neuromotor-primary-final29\\tubiana-1974.pdf",
+              "sha256": "5b0aec406da0278976da625c7778a98b51549828d804ab67dfdd92f1e937eece",
+              "bytes": 593503,
+              "visualPagesRead": [
+                1,
+                2,
+                3
+              ],
+              "readScope": "Earlier original author chapter, printed45–47; sum-of-joints paragraph and stage list p45, figures7.2/7.3 and modifiers p46, measurement exclusions p47 visually read. This is1974, not full1986article.",
+              "originalFullArticleRead": false
+            }
+          ]
+        }
+      ],
+      "evidencePath": "reports/review-20261003/six-neuromotor-independent-source-check-final29.json",
+      "evidenceSha256": "b0d0841319b5a2323ff6d6939358aa9c00bb935fb46c0cbc64138974a521d736",
+      "independentPeer": {
+        "status": "passed",
+        "file": "reports/review-20261003/six-neuromotor-independent-peer-verify-final29-r2.json",
+        "sha256": "cdf0b3a3deb4648d854db79cdf7f3d5c04f6e5f665e864940ee6e14cd450ca47",
+        "scope": "Independent bounded witnesses from six personally read primary/official targeted sources. Degree sum plus36assigned ordinal codes only; no clinical feature-to-grade classification, ordinal spacing, risk/cutoffs, diagnoses, clinical/professional language or rights approval. Only156own witnesses are within the explicit current local schema;42out-of-schema own magnitude witnesses are separate local contract rejection checks, not source arithmetic passes.",
+        "checks": 27198,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "packagingPeer": "pending"
+      },
+      "freshAdapterExecutions": 1956,
+      "freshVmExecutions": 1956,
+      "actualBrowserEvidenceScope": "Original source29 actual isolated Chromium 652x3 raw-only captures retained, not rerun here or served portal clinical evidence.",
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/classificacao-de-tubiana/calculator.js",
+          "sha256": "79fac608581b14371acc4f51dd5466191f731e1d22576b028b69449143ec1026",
+          "app": "website"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/classificacao-de-tubiana/calculator.js",
+          "sha256": "79fac608581b14371acc4f51dd5466191f731e1d22576b028b69449143ec1026",
+          "app": "dashboard"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/classificacao-de-tubiana/calculator.js",
+          "sha256": "79fac608581b14371acc4f51dd5466191f731e1d22576b028b69449143ec1026",
+          "app": "command-center"
+        }
+      ],
+      "qualifications": [
+        "Exact integer totalDegrees for selected nonthumb magnitudes within total200°. No stages/level/verdict or hand-wide summary approval.",
+        "Original1986 fulltext was not obtained. Its exact inclusive boundaries are not certified.",
+        "Printed1974 stage3 upper155° conflicts with stage4 >135°; no categorical expectation for that overlap.",
+        "Printed1974 N text says established flexion deformity, whereas figures and next page describe nodule without deformity. No N-rule oracle inferred.",
+        "The local form accepts three positive magnitudes; no measurement/origin distinction is inferred from arithmetic.",
+        "1974 chapter cannot silently replace1986 edition or certify operation indication.",
+        "This numeric receipt does not certify observation-to-grade assignment, administration, diagnostic/severity interpretations, prognosis, measurement, original full-method equivalence, professional/official translation or source-rights permission.",
+        "Clinical levels/main labels/verdicts are intentionally excluded from this bank. Only the explicitly exposed selected raw field is projected; no source fixture was used as an oracle.",
+        "The five ordinal methods preserve already-selected grade codes only. Their clinical scoring rubrics are not established by successful identity tests.",
+        "Original source29 Node/VM/actual isolatedChromium observations remain in the immutable donor report. This preparation adds fresh Node/VM raw-only replays; it is not a served page/API/React or deployment gate.",
+        "Source28 banks are separately owned and not included in this prospective27→29 candidate. Compose evidence per ID and recompute aggregate counters, never overwrite whole stale catalogs."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Tubiana 1986:déficit total deextensão, classes 0/N/I–IV, cortes 45/90/135 graus",
+    "implementationVersion": "classificacao-de-tubiana@native-2026-10-03+79fac608581b",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3963905/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Déficit total do raio = déficit de extensão da MCF + IFP + IFD (a hiperextensão da IFD entra como déficit). Estádios: 0 sem lesão; N nódulo sem contratura; 1 até 45°; 2 de 45 a 90°; 3 de 90 a 135°; 4 acima de 135°.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "mcf",
+            "label": "Déficit de extensão da MCF (metacarpofalângica)",
+            "type": "num",
+            "min": 0,
+            "max": 120,
+            "unit": "graus",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ifp",
+            "label": "Déficit de extensão da IFP (interfalângica proximal)",
+            "type": "num",
+            "min": 0,
+            "max": 130,
+            "unit": "graus",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ifd",
+            "label": "Déficit de extensão da IFD (ou hiperextensão)",
+            "type": "num",
+            "min": 0,
+            "max": 100,
+            "unit": "graus",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "nodulo",
+            "label": "Há nódulo ou corda palpável?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          }
+        ],
+        "hash": "875f2e2555d29365234e7b2817a58f20d7de69c005df0fa8ed98b8f331dc01fc"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Tubiana R. Evaluation des déformations dans la maladie de Dupuytren (Evaluation of deformities in Dupuytren disease). Ann Chir Main, 1986.",
+          "url": "https://doi.org/10.1016/s0753-9053(86)80043-6",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Evaluation of deformities in Dupuytren's disease.",
+            "year": "1986",
+            "firstPublicationDate": "1986-01-01",
+            "doi": "10.1016/s0753-9053(86)80043-6",
+            "pmid": "3963905",
+            "journal": "Annales de chirurgie de la main : organe officiel des societes de chirurgie de la main",
+            "authors": "Tubiana R."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/3963905/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "35af8da24079eb16cbd1ad4830668e84b258a1c8509ad8b525bfeba3b05d2e37",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T20:21:47.319Z",
+        "total": 652,
+        "passed": 652,
+        "sourceRowCount": 652,
+        "uniqueApiInputCount": 652,
+        "sourceContextCount": 652,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "scope": "Exact integer totalDegrees for selected nonthumb magnitudes within total200°. No stages/level/verdict or hand-wide summary approval.",
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "01a3a72e07044a6a38b05126e3145bc9a90a5dc68909fe94ab7fbf3fa09825d9",
+          "total": 652,
+          "bankRowCount": 652,
+          "uniqueApiInputCount": 652,
+          "sourceContextCount": 652,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/six-neuromotor-independent-expectations-final29.json",
+              "sha256": "f4dad20a9ba35cd815eb875728013287b62d5259b3f73156a9a1a00fb4a094b4"
+            },
+            {
+              "file": "reports/review-20261003/six-neuromotor-primary-source-review-final29.json",
+              "sha256": "3be675e6df346996e30e38384bd1d8af72f23b9678413687b5c26881cff563d0"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/six-neuromotor-independent-source-check-final29.json",
+            "sha256": "b0d0841319b5a2323ff6d6939358aa9c00bb935fb46c0cbc64138974a521d736"
+          },
+          "packagingRequirement": "Byte-exact complete raw-only bank; source28 and any later source/rubric changes are composed separately."
+        },
+        "sources": [
+          {
+            "review": {
+              "file": "reports/review-20261003/six-neuromotor-primary-source-review-final29.json",
+              "sha256": "3be675e6df346996e30e38384bd1d8af72f23b9678413687b5c26881cff563d0"
+            },
+            "item": {
+              "id": "classificacao-de-tubiana",
+              "verifiedEdition": "1974 author chapter sum only;1986 identity/abstract indexed",
+              "sourceIds": [
+                "tubiana-1974"
+              ],
+              "verified": "For a nonthumb finger/ray, add three joint-extension deficits; fixedDIP hyperextension magnitude also contributes positively. Degree arithmetic only. Thumb/firstweb and additional lesions/modifiers are different measurements.",
+              "unresolved": [
+                "Original1986 fulltext was not obtained. Its exact inclusive boundaries are not certified.",
+                "Printed1974 stage3 upper155° conflicts with stage4 >135°; no categorical expectation for that overlap.",
+                "Printed1974 N text says established flexion deformity, whereas figures and next page describe nodule without deformity. No N-rule oracle inferred.",
+                "The local form accepts three positive magnitudes; no measurement/origin distinction is inferred from arithmetic.",
+                "1974 chapter cannot silently replace1986 edition or certify operation indication."
+              ],
+              "findings": [
+                {
+                  "type": "primary-source-internal-conflict",
+                  "field": "grade intervals",
+                  "detail": "Visual1974p45 shows90–155 versus >135, not an OCR-only artifact."
+                }
+              ],
+              "proofScope": "Exact integer totalDegrees for selected nonthumb magnitudes within total200°. No stages/level/verdict or hand-wide summary approval.",
+              "clinicalApproval": "not-performed",
+              "professionalLanguageApproval": "not-performed",
+              "rightsApproval": "not-performed",
+              "fullMethodConformance": "not-performed",
+              "calculatorImportsPerformed": false,
+              "sourceBinding": {
+                "id": "classificacao-de-tubiana",
+                "recordSha256": "b03136f126c5ac01789a8c5d05c4673fb8e57dfbb38b66c10203d4c2abc58ad0",
+                "frozenRecordFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/selected-records/classificacao-de-tubiana.json",
+                "frozenRecordSha256": "108b0b10c853449db04d93b72d7440b2f2f03bc64e9232553fb7981f08d9890e",
+                "methodVersion": "Tubiana 1986:déficit total deextensão, classes 0/N/I–IV, cortes 45/90/135 graus",
+                "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3963905/",
+                "adapters": [
+                  {
+                    "file": "apps/website/private/tool-code/classificacao-de-tubiana/calculator.js",
+                    "sha256": "79fac608581b14371acc4f51dd5466191f731e1d22576b028b69449143ec1026",
+                    "bytes": 5423,
+                    "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/website/private/tool-code/classificacao-de-tubiana/calculator.js",
+                    "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                  },
+                  {
+                    "file": "apps/dashboard/private/tool-code/classificacao-de-tubiana/calculator.js",
+                    "sha256": "79fac608581b14371acc4f51dd5466191f731e1d22576b028b69449143ec1026",
+                    "bytes": 5423,
+                    "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/dashboard/private/tool-code/classificacao-de-tubiana/calculator.js",
+                    "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                  },
+                  {
+                    "file": "apps/command-center/private/tool-code/classificacao-de-tubiana/calculator.js",
+                    "sha256": "79fac608581b14371acc4f51dd5466191f731e1d22576b028b69449143ec1026",
+                    "bytes": 5423,
+                    "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/command-center/private/tool-code/classificacao-de-tubiana/calculator.js",
+                    "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                  }
+                ]
+              }
+            },
+            "sources": [
+              {
+                "id": "tubiana-1974",
+                "url": "https://dupuytrens.org/DupPDFs/1974_Tubiana.pdf",
+                "file": "C:\\FGX Dev\\Elucenia\\ELUCENIA\\reports\\review-20261003\\six-neuromotor-primary-final29\\tubiana-1974.pdf",
+                "sha256": "5b0aec406da0278976da625c7778a98b51549828d804ab67dfdd92f1e937eece",
+                "bytes": 593503,
+                "visualPagesRead": [
+                  1,
+                  2,
+                  3
+                ],
+                "readScope": "Earlier original author chapter, printed45–47; sum-of-joints paragraph and stage list p45, figures7.2/7.3 and modifiers p46, measurement exclusions p47 visually read. This is1974, not full1986article.",
+                "originalFullArticleRead": false
+              }
+            ]
+          }
+        ],
+        "evidencePath": "reports/review-20261003/six-neuromotor-independent-source-check-final29.json",
+        "evidenceSha256": "b0d0841319b5a2323ff6d6939358aa9c00bb935fb46c0cbc64138974a521d736",
+        "independentPeer": {
+          "status": "passed",
+          "file": "reports/review-20261003/six-neuromotor-independent-peer-verify-final29-r2.json",
+          "sha256": "cdf0b3a3deb4648d854db79cdf7f3d5c04f6e5f665e864940ee6e14cd450ca47",
+          "scope": "Independent bounded witnesses from six personally read primary/official targeted sources. Degree sum plus36assigned ordinal codes only; no clinical feature-to-grade classification, ordinal spacing, risk/cutoffs, diagnoses, clinical/professional language or rights approval. Only156own witnesses are within the explicit current local schema;42out-of-schema own magnitude witnesses are separate local contract rejection checks, not source arithmetic passes.",
+          "checks": 27198,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed",
+          "packagingPeer": "pending"
+        },
+        "freshAdapterExecutions": 1956,
+        "freshVmExecutions": 1956,
+        "actualBrowserEvidenceScope": "Original source29 actual isolated Chromium 652x3 raw-only captures retained, not rerun here or served portal clinical evidence.",
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/classificacao-de-tubiana/calculator.js",
+            "sha256": "79fac608581b14371acc4f51dd5466191f731e1d22576b028b69449143ec1026",
+            "app": "website"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/classificacao-de-tubiana/calculator.js",
+            "sha256": "79fac608581b14371acc4f51dd5466191f731e1d22576b028b69449143ec1026",
+            "app": "dashboard"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/classificacao-de-tubiana/calculator.js",
+            "sha256": "79fac608581b14371acc4f51dd5466191f731e1d22576b028b69449143ec1026",
+            "app": "command-center"
+          }
+        ],
+        "qualifications": [
+          "Exact integer totalDegrees for selected nonthumb magnitudes within total200°. No stages/level/verdict or hand-wide summary approval.",
+          "Original1986 fulltext was not obtained. Its exact inclusive boundaries are not certified.",
+          "Printed1974 stage3 upper155° conflicts with stage4 >135°; no categorical expectation for that overlap.",
+          "Printed1974 N text says established flexion deformity, whereas figures and next page describe nodule without deformity. No N-rule oracle inferred.",
+          "The local form accepts three positive magnitudes; no measurement/origin distinction is inferred from arithmetic.",
+          "1974 chapter cannot silently replace1986 edition or certify operation indication.",
+          "This numeric receipt does not certify observation-to-grade assignment, administration, diagnostic/severity interpretations, prognosis, measurement, original full-method equivalence, professional/official translation or source-rights permission.",
+          "Clinical levels/main labels/verdicts are intentionally excluded from this bank. Only the explicitly exposed selected raw field is projected; no source fixture was used as an oracle.",
+          "The five ordinal methods preserve already-selected grade codes only. Their clinical scoring rubrics are not established by successful identity tests.",
+          "Original source29 Node/VM/actual isolatedChromium observations remain in the immutable donor report. This preparation adds fresh Node/VM raw-only replays; it is not a served page/API/React or deployment gate.",
+          "Source28 banks are separately owned and not included in this prospective27→29 candidate. Compose evidence per ID and recompute aggregate counters, never overwrite whole stale catalogs."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "79fac608581b14371acc4f51dd5466191f731e1d22576b028b69449143ec1026"
+    },
+    "limits": "A classificação Tubiana 1986 descreve deformidades de Dupuytren por raio e prevê informações complementares sobre polegar, primeiro espaço interdigital, pele e rigidez pós-operatória. O total de déficit de extensão isolado não reproduz essa avaliação completa. Cortes e convenções da versão usada precisam ser conferidos no artigo integral.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.769Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não mostra cortes angulares ou todas as convenções N/I–IV; o total simplificado não inclui os indicadores complementares."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/classificacao-de-tubiana/calculator.js",
+    "bytes": 5423,
+    "sha256": "79fac608581b14371acc4f51dd5466191f731e1d22576b028b69449143ec1026"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "0450326582768f01bf2ca49d991bb39af20bcdca05e473278c9e9695d6ecf109",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "9b2719e8b21caf9df56e07500f67c8f82c03dd614b10f18541c564536697812f",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "9b2719e8b21caf9df56e07500f67c8f82c03dd614b10f18541c564536697812f",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

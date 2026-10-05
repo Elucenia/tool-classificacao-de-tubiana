@@ -1,0 +1,88 @@
+{
+  "id": "classificacao-de-tubiana",
+  "repository": "Elucenia/tool-classificacao-de-tubiana",
+  "branch": "main",
+  "commit": "475003d99364441868172ac39bcc6a5ca94dbf3c",
+  "archiveSha256": "67e80346274089da31b3ac6e72e81e4e0b894a7eeb2d97722b414bfcdfe81534",
+  "protectedFiles": [
+    {
+      "path": ".gitattributes",
+      "type": "blob",
+      "mode": "100644",
+      "size": 19,
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "blob",
+      "mode": "100644",
+      "size": 279,
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "mode": "100644",
+      "size": 42,
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+    },
+    {
+      "path": "AUTHORSHIP.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 3345,
+      "sha": "f7eb5a1ec02c00afa6e612327aaed1cb92948c3b",
+      "sha256": "f0d252826859a48b470b6d3229ad6a5ff3c161f5cff613d97359e1de90984480"
+    },
+    {
+      "path": "CITATION.cff",
+      "type": "blob",
+      "mode": "100644",
+      "size": 953,
+      "sha": "2e0a2c63c014760cacc439cfb0e2d4e31f9da176",
+      "sha256": "d406c6359377da91a25d8efcfe4257d82593387e25375252109fe43b6d5f461e"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1475,
+      "sha": "e4f45ad8d7bdf5d32c0696d4f431462524a7b284",
+      "sha256": "338305984f7c8b3c8d23a31881731d2e78eb4ed996995076b0b36fb445c75b53"
+    },
+    {
+      "path": "LICENSE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 11358,
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1663,
+      "sha": "801891d21870631bc7be001d78d77f4e32ed90b2",
+      "sha256": "06cdc340f50489ee9f5b6792ef1c2d5c0c928665aa5e3114b8006566e53c4031"
+    },
+    {
+      "path": "SECURITY.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 894,
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+    }
+  ],
+  "receipt": {
+    "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+    "bytes": 6066154,
+    "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+  },
+  "remoteCodeExecuted": false,
+  "freshBranchReadRequiredBeforePublication": true
+}

@@ -1,0 +1,78 @@
+<!-- ELUCENIA technical documentation · classificacao-de-tubiana · ja · no clinical/professional/rights approval -->
+
+# Tubiana分類（デュピュイトラン拘縮）
+
+[条件・出典・許諾](https://elucenia.org/ja/tools/classificacao-de-tubiana)
+
+## 使い方
+
+ポータルでツールを使用するか、ローカルHTTPサーバー経由でindex.htmlを開いてください。言語を選択し、項目を入力して計算してください。
+
+## 入力項目と単位
+
+### 中手指節関節（MCP）の伸展制限
+
+`mcf`
+
+度 · 範囲: 0–120
+
+### 近位指節間関節（PIP）の伸展制限
+
+`ifp`
+
+度 · 範囲: 0–130
+
+### 遠位指節間関節の伸展制限（または過伸展）
+
+`ifd`
+
+度 · 範囲: 0–100
+
+### 結節または索状物を触知するか？
+
+`nodulo`
+
+- `0` — いいえ
+- `1` — はい
+
+## 方法の版
+
+Tubiana 1986：総伸展制限、分類0/N/I～IV、閾値45/90/135度
+
+## 記載された計算式
+
+指列の総伸展制限=MCP+PIP+DIP（DIP過伸展も制限として加算）。病期： 0 病変なし; N 拘縮のない結節; 1 45°まで; 2 45～90°; 3 90～135°; 4 135°超.
+
+## 限界・対象集団
+
+Tubiana 1986の分類は、指列ごとのデュピュイトラン変形を記述し、母指、第一指間腔、皮膚、術後の拘縮に関する補足情報を含みます。伸展不足の合計だけでは、この完全な評価を再現できません。使用する版のカットオフと定義上の取り決めは、論文全文で確認する必要があります。
+
+## 参考文献
+
+- [Tubiana R. Evaluation des déformations dans la maladie de Dupuytren (Evaluation of deformities in Dupuytren disease). Ann Chir Main, 1986.](https://doi.org/10.1016/s0753-9053(86)80043-6)
+
+## 技術テストの再現
+
+このリポジトリのルートディレクトリでnode test.cjsを実行すると、記録された合成ケースを再実行できます。元の入力、期待結果、許容誤差は保持されています。技術テストは臨床的検証を意味しません。
+
+```sh
+node test.cjs
+```
+
+tool.jsonには出典、版、確認範囲が記録されています。examples.jsonには合成入力と期待結果が保持され、results.jsonには実際に得られた結果が記録されています。
+
+[記録・参考文献](../tool.json) · [JavaScriptコード](../calculator.js) · [参照ケース](../examples.json) · [results.json](../results.json)
+
+## 確認状況と使用条件
+
+独立した臨床レビューは実施されていません。
+
+このインターフェースは独自に作成した翻訳であり、公式版や認証済みの版ではありません。独立した臨床レビュー、専門家による言語レビュー、評価尺度等の権利許諾の確認は実施されていません。
+
+式または分類の結果です。解釈、対応、適用可能性は専門家による評価と選択した出典に依存します。
+
+## ライセンスと帰属表示
+
+Apache-2.0はELUCENIAのコードにのみ適用されます。評価尺度等、出版物、翻訳、データの権利は、それぞれの権利者に帰属します。LICENSEとNOTICEを保持してください。
+
+ELUCENIA · Felipe Guedes · Copyright © 2026
