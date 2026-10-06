@@ -76,3 +76,49 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Stadium 1: gesamtes Defizit von 0 bis 45°
+
+| Ergebnisdetails | |
+| --- | --- |
+| Gesamtes Extensionsdefizit | 30° |
+
+MCF-Kontraktur ≥ 30° oder jede IP-Kontraktur: klassische Behandlungsindikation (Hueston-Kriterium).
+
+
+### 2
+
+Stadium 2: gesamtes Defizit von 45 bis 90°
+
+| Ergebnisdetails | |
+| --- | --- |
+| Gesamtes Extensionsdefizit | 90° |
+
+MCF-Kontraktur ≥ 30° oder jede IP-Kontraktur: klassische Behandlungsindikation (Hueston-Kriterium).
+
+
+### 3
+
+Stadium 4: gesamtes Defizit über 135°
+
+| Ergebnisdetails | |
+| --- | --- |
+| Gesamtes Extensionsdefizit | 150° |
+
+MCF-Kontraktur ≥ 30° oder jede IP-Kontraktur: klassische Behandlungsindikation (Hueston-Kriterium).
+
+
+### 4
+
+Stadium N: Knoten oder Strang ohne Kontraktur
+
+| Ergebnisdetails | |
+| --- | --- |
+| Gesamtes Extensionsdefizit | 0° |
+

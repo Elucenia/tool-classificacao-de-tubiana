@@ -76,3 +76,49 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Stage 1: total deficit from 0 to 45°
+
+| Result details | |
+| --- | --- |
+| Total extension deficit | 30° |
+
+MCF contracture ≥ 30° or any IP contracture: classic indication for treatment (Hueston criterion).
+
+
+### 2
+
+Stage 2: total deficit from 45 to 90°
+
+| Result details | |
+| --- | --- |
+| Total extension deficit | 90° |
+
+MCF contracture ≥ 30° or any IP contracture: classic indication for treatment (Hueston criterion).
+
+
+### 3
+
+Stage 4: total deficit above 135°
+
+| Result details | |
+| --- | --- |
+| Total extension deficit | 150° |
+
+MCF contracture ≥ 30° or any IP contracture: classic indication for treatment (Hueston criterion).
+
+
+### 4
+
+Stage N: nodule or cord without contracture
+
+| Result details | |
+| --- | --- |
+| Total extension deficit | 0° |
+

@@ -76,3 +76,49 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Stade 1 : déficit total de 0 à 45°
+
+| Détails du résultat | |
+| --- | --- |
+| Déficit total d’extension | 30° |
+
+Contracture de la MCF ≥ 30° ou toute contracture de l’IPP : indication classique de traitement (critère de Hueston).
+
+
+### 2
+
+Stade 2 : déficit total de 45 à 90°
+
+| Détails du résultat | |
+| --- | --- |
+| Déficit total d’extension | 90° |
+
+Contracture de la MCF ≥ 30° ou toute contracture de l’IPP : indication classique de traitement (critère de Hueston).
+
+
+### 3
+
+Stade 4 : déficit total supérieur à 135°
+
+| Détails du résultat | |
+| --- | --- |
+| Déficit total d’extension | 150° |
+
+Contracture de la MCF ≥ 30° ou toute contracture de l’IPP : indication classique de traitement (critère de Hueston).
+
+
+### 4
+
+Stade N : nodule ou corde sans contracture
+
+| Détails du résultat | |
+| --- | --- |
+| Déficit total d’extension | 0° |
+

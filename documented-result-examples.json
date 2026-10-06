@@ -1,0 +1,1325 @@
+{
+  "id": "classificacao-de-tubiana",
+  "implementationVersion": "classificacao-de-tubiana@native-2026-10-05+f8d39859e49a",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "MCF 30°, IFP e IFD 0°: 30° = estádio 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Déficit total de extensão",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "30°",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estádio 1: déficit total de 0 a 45°",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Contratura da MCF ≥ 30° ou qualquer contratura da IFP: indicação clássica de tratamento (critério de Hueston).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: MCF 40° + IFP 50° = 90° = estádio 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Déficit total de extensão",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "90°",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estádio 2: déficit total de 45 a 90°",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Contratura da MCF ≥ 30° ou qualquer contratura da IFP: indicação clássica de tratamento (critério de Hueston).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "MCF 60° + IFP 70° + IFD 20° = 150° = estádio 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Déficit total de extensão",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "150°",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estádio 4: déficit total acima de 135°",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Contratura da MCF ≥ 30° ou qualquer contratura da IFP: indicação clássica de tratamento (critério de Hueston).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nódulo palmar sem contratura: estádio N",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Déficit total de extensão",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0°",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estádio N: nódulo ou corda sem contratura",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "MCF 30°, IFP e IFD 0°: 30° = estádio 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Total extension deficit",
+                "locale": "en",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "30°",
+                "locale": "en",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stage 1: total deficit from 0 to 45°",
+            "locale": "en",
+            "template": "documented-authored-105c3d0aa9b15803a8ca"
+          },
+          "note": {
+            "text": "MCF contracture ≥ 30° or any IP contracture: classic indication for treatment (Hueston criterion).",
+            "locale": "en",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: MCF 40° + IFP 50° = 90° = estádio 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Total extension deficit",
+                "locale": "en",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "90°",
+                "locale": "en",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  90
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stage 2: total deficit from 45 to 90°",
+            "locale": "en",
+            "template": "documented-authored-dc4747ff0773612a0009"
+          },
+          "note": {
+            "text": "MCF contracture ≥ 30° or any IP contracture: classic indication for treatment (Hueston criterion).",
+            "locale": "en",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "MCF 60° + IFP 70° + IFD 20° = 150° = estádio 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Total extension deficit",
+                "locale": "en",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "150°",
+                "locale": "en",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stage 4: total deficit above 135°",
+            "locale": "en",
+            "template": "documented-authored-692234ab026eb4cd0ae0"
+          },
+          "note": {
+            "text": "MCF contracture ≥ 30° or any IP contracture: classic indication for treatment (Hueston criterion).",
+            "locale": "en",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nódulo palmar sem contratura: estádio N",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Total extension deficit",
+                "locale": "en",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "0°",
+                "locale": "en",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stage N: nodule or cord without contracture",
+            "locale": "en",
+            "template": "documented-authored-6cd3ad3ae3f5f82544ba"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "MCF 30°, IFP e IFD 0°: 30° = estádio 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Déficit total de extensión",
+                "locale": "es",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "30°",
+                "locale": "es",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estadio 1: déficit total de 0 a 45°",
+            "locale": "es",
+            "template": "documented-authored-105c3d0aa9b15803a8ca"
+          },
+          "note": {
+            "text": "Contractura de la MCF ≥ 30° o cualquier contractura de la IFP: indicación clásica de tratamiento (criterio de Hueston).",
+            "locale": "es",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: MCF 40° + IFP 50° = 90° = estádio 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Déficit total de extensión",
+                "locale": "es",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "90°",
+                "locale": "es",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  90
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estadio 2: déficit total de 45 a 90°",
+            "locale": "es",
+            "template": "documented-authored-dc4747ff0773612a0009"
+          },
+          "note": {
+            "text": "Contractura de la MCF ≥ 30° o cualquier contractura de la IFP: indicación clásica de tratamiento (criterio de Hueston).",
+            "locale": "es",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "MCF 60° + IFP 70° + IFD 20° = 150° = estádio 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Déficit total de extensión",
+                "locale": "es",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "150°",
+                "locale": "es",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estadio 4: déficit total por encima de 135°",
+            "locale": "es",
+            "template": "documented-authored-692234ab026eb4cd0ae0"
+          },
+          "note": {
+            "text": "Contractura de la MCF ≥ 30° o cualquier contractura de la IFP: indicación clásica de tratamiento (criterio de Hueston).",
+            "locale": "es",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nódulo palmar sem contratura: estádio N",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Déficit total de extensión",
+                "locale": "es",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "0°",
+                "locale": "es",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estadio N: nódulo o cuerda sin contractura",
+            "locale": "es",
+            "template": "documented-authored-6cd3ad3ae3f5f82544ba"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "MCF 30°, IFP e IFD 0°: 30° = estádio 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Déficit total d’extension",
+                "locale": "fr",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "30°",
+                "locale": "fr",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stade 1 : déficit total de 0 à 45°",
+            "locale": "fr",
+            "template": "documented-authored-105c3d0aa9b15803a8ca"
+          },
+          "note": {
+            "text": "Contracture de la MCF ≥ 30° ou toute contracture de l’IPP : indication classique de traitement (critère de Hueston).",
+            "locale": "fr",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: MCF 40° + IFP 50° = 90° = estádio 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Déficit total d’extension",
+                "locale": "fr",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "90°",
+                "locale": "fr",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  90
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stade 2 : déficit total de 45 à 90°",
+            "locale": "fr",
+            "template": "documented-authored-dc4747ff0773612a0009"
+          },
+          "note": {
+            "text": "Contracture de la MCF ≥ 30° ou toute contracture de l’IPP : indication classique de traitement (critère de Hueston).",
+            "locale": "fr",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "MCF 60° + IFP 70° + IFD 20° = 150° = estádio 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Déficit total d’extension",
+                "locale": "fr",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "150°",
+                "locale": "fr",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stade 4 : déficit total supérieur à 135°",
+            "locale": "fr",
+            "template": "documented-authored-692234ab026eb4cd0ae0"
+          },
+          "note": {
+            "text": "Contracture de la MCF ≥ 30° ou toute contracture de l’IPP : indication classique de traitement (critère de Hueston).",
+            "locale": "fr",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nódulo palmar sem contratura: estádio N",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Déficit total d’extension",
+                "locale": "fr",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "0°",
+                "locale": "fr",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stade N : nodule ou corde sans contracture",
+            "locale": "fr",
+            "template": "documented-authored-6cd3ad3ae3f5f82544ba"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "MCF 30°, IFP e IFD 0°: 30° = estádio 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Gesamtes Extensionsdefizit",
+                "locale": "de",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "30°",
+                "locale": "de",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stadium 1: gesamtes Defizit von 0 bis 45°",
+            "locale": "de",
+            "template": "documented-authored-105c3d0aa9b15803a8ca"
+          },
+          "note": {
+            "text": "MCF-Kontraktur ≥ 30° oder jede IP-Kontraktur: klassische Behandlungsindikation (Hueston-Kriterium).",
+            "locale": "de",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: MCF 40° + IFP 50° = 90° = estádio 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Gesamtes Extensionsdefizit",
+                "locale": "de",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "90°",
+                "locale": "de",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  90
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stadium 2: gesamtes Defizit von 45 bis 90°",
+            "locale": "de",
+            "template": "documented-authored-dc4747ff0773612a0009"
+          },
+          "note": {
+            "text": "MCF-Kontraktur ≥ 30° oder jede IP-Kontraktur: klassische Behandlungsindikation (Hueston-Kriterium).",
+            "locale": "de",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "MCF 60° + IFP 70° + IFD 20° = 150° = estádio 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Gesamtes Extensionsdefizit",
+                "locale": "de",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "150°",
+                "locale": "de",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stadium 4: gesamtes Defizit über 135°",
+            "locale": "de",
+            "template": "documented-authored-692234ab026eb4cd0ae0"
+          },
+          "note": {
+            "text": "MCF-Kontraktur ≥ 30° oder jede IP-Kontraktur: klassische Behandlungsindikation (Hueston-Kriterium).",
+            "locale": "de",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nódulo palmar sem contratura: estádio N",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Gesamtes Extensionsdefizit",
+                "locale": "de",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "0°",
+                "locale": "de",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stadium N: Knoten oder Strang ohne Kontraktur",
+            "locale": "de",
+            "template": "documented-authored-6cd3ad3ae3f5f82544ba"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "MCF 30°, IFP e IFD 0°: 30° = estádio 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Deficit totale di estensione",
+                "locale": "it",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "30°",
+                "locale": "it",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stadio 1: deficit totale da 0 a 45°",
+            "locale": "it",
+            "template": "documented-authored-105c3d0aa9b15803a8ca"
+          },
+          "note": {
+            "text": "Contrattura della MCF ≥ 30° o qualsiasi contrattura della IFP: indicazione classica al trattamento (criterio di Hueston).",
+            "locale": "it",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: MCF 40° + IFP 50° = 90° = estádio 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Deficit totale di estensione",
+                "locale": "it",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "90°",
+                "locale": "it",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  90
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stadio 2: deficit totale da 45 a 90°",
+            "locale": "it",
+            "template": "documented-authored-dc4747ff0773612a0009"
+          },
+          "note": {
+            "text": "Contrattura della MCF ≥ 30° o qualsiasi contrattura della IFP: indicazione classica al trattamento (criterio di Hueston).",
+            "locale": "it",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "MCF 60° + IFP 70° + IFD 20° = 150° = estádio 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Deficit totale di estensione",
+                "locale": "it",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "150°",
+                "locale": "it",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stadio 4: deficit totale superiore a 135°",
+            "locale": "it",
+            "template": "documented-authored-692234ab026eb4cd0ae0"
+          },
+          "note": {
+            "text": "Contrattura della MCF ≥ 30° o qualsiasi contrattura della IFP: indicazione classica al trattamento (criterio di Hueston).",
+            "locale": "it",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nódulo palmar sem contratura: estádio N",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Deficit totale di estensione",
+                "locale": "it",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "0°",
+                "locale": "it",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stadio N: nodulo o cordone senza contrattura",
+            "locale": "it",
+            "template": "documented-authored-6cd3ad3ae3f5f82544ba"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "MCF 30°, IFP e IFD 0°: 30° = estádio 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "العجز الكلي في البسط",
+                "locale": "ar",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "٣٠°",
+                "locale": "ar",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "المرحلة 1: العجز الكلي من 0 إلى 45°",
+            "locale": "ar",
+            "template": "documented-authored-105c3d0aa9b15803a8ca"
+          },
+          "note": {
+            "text": "تقلص MCF ≥ 30° أو أي تقلص في IFP: استطباب كلاسيكي للعلاج (معيار Hueston).",
+            "locale": "ar",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: MCF 40° + IFP 50° = 90° = estádio 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "العجز الكلي في البسط",
+                "locale": "ar",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "٩٠°",
+                "locale": "ar",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  90
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "المرحلة 2: العجز الكلي من 45 إلى 90°",
+            "locale": "ar",
+            "template": "documented-authored-dc4747ff0773612a0009"
+          },
+          "note": {
+            "text": "تقلص MCF ≥ 30° أو أي تقلص في IFP: استطباب كلاسيكي للعلاج (معيار Hueston).",
+            "locale": "ar",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "MCF 60° + IFP 70° + IFD 20° = 150° = estádio 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "العجز الكلي في البسط",
+                "locale": "ar",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "١٥٠°",
+                "locale": "ar",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "المرحلة 4: العجز الكلي فوق 135°",
+            "locale": "ar",
+            "template": "documented-authored-692234ab026eb4cd0ae0"
+          },
+          "note": {
+            "text": "تقلص MCF ≥ 30° أو أي تقلص في IFP: استطباب كلاسيكي للعلاج (معيار Hueston).",
+            "locale": "ar",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nódulo palmar sem contratura: estádio N",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "العجز الكلي في البسط",
+                "locale": "ar",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "٠°",
+                "locale": "ar",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "المرحلة N: عقدة أو حبل دون تقلص",
+            "locale": "ar",
+            "template": "documented-authored-6cd3ad3ae3f5f82544ba"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "MCF 30°, IFP e IFD 0°: 30° = estádio 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "总伸展缺损",
+                "locale": "zh",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "30°",
+                "locale": "zh",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "第1期：总伸展缺损0至45°",
+            "locale": "zh",
+            "template": "documented-authored-105c3d0aa9b15803a8ca"
+          },
+          "note": {
+            "text": "MCF挛缩 ≥ 30°或任何IP挛缩：治疗的经典适应证（Hueston标准）。",
+            "locale": "zh",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: MCF 40° + IFP 50° = 90° = estádio 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "总伸展缺损",
+                "locale": "zh",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "90°",
+                "locale": "zh",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  90
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "第2期：总伸展缺损45至90°",
+            "locale": "zh",
+            "template": "documented-authored-dc4747ff0773612a0009"
+          },
+          "note": {
+            "text": "MCF挛缩 ≥ 30°或任何IP挛缩：治疗的经典适应证（Hueston标准）。",
+            "locale": "zh",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "MCF 60° + IFP 70° + IFD 20° = 150° = estádio 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "总伸展缺损",
+                "locale": "zh",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "150°",
+                "locale": "zh",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "第4期：总伸展缺损超过135°",
+            "locale": "zh",
+            "template": "documented-authored-692234ab026eb4cd0ae0"
+          },
+          "note": {
+            "text": "MCF挛缩 ≥ 30°或任何IP挛缩：治疗的经典适应证（Hueston标准）。",
+            "locale": "zh",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nódulo palmar sem contratura: estádio N",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "总伸展缺损",
+                "locale": "zh",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "0°",
+                "locale": "zh",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "N期：无挛缩的结节或条索",
+            "locale": "zh",
+            "template": "documented-authored-6cd3ad3ae3f5f82544ba"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "MCF 30°, IFP e IFD 0°: 30° = estádio 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "総伸展欠損",
+                "locale": "ja",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "30°",
+                "locale": "ja",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "ステージ1：総伸展欠損0～45°",
+            "locale": "ja",
+            "template": "documented-authored-105c3d0aa9b15803a8ca"
+          },
+          "note": {
+            "text": "MCF拘縮 ≥ 30°または任意のIP拘縮：治療の古典的適応（Hueston基準）。",
+            "locale": "ja",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: MCF 40° + IFP 50° = 90° = estádio 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "総伸展欠損",
+                "locale": "ja",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "90°",
+                "locale": "ja",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  90
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "ステージ2：総伸展欠損45～90°",
+            "locale": "ja",
+            "template": "documented-authored-dc4747ff0773612a0009"
+          },
+          "note": {
+            "text": "MCF拘縮 ≥ 30°または任意のIP拘縮：治療の古典的適応（Hueston基準）。",
+            "locale": "ja",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "MCF 60° + IFP 70° + IFD 20° = 150° = estádio 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "総伸展欠損",
+                "locale": "ja",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "150°",
+                "locale": "ja",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "ステージ4：総伸展欠損135°超",
+            "locale": "ja",
+            "template": "documented-authored-692234ab026eb4cd0ae0"
+          },
+          "note": {
+            "text": "MCF拘縮 ≥ 30°または任意のIP拘縮：治療の古典的適応（Hueston基準）。",
+            "locale": "ja",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nódulo palmar sem contratura: estádio N",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "総伸展欠損",
+                "locale": "ja",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "0°",
+                "locale": "ja",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "ステージN：拘縮のない結節または索状物",
+            "locale": "ja",
+            "template": "documented-authored-6cd3ad3ae3f5f82544ba"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "MCF 30°, IFP e IFD 0°: 30° = estádio 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "कुल विस्तार कमी",
+                "locale": "hi",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "30°",
+                "locale": "hi",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "चरण 1: कुल कमी 0 से 45°",
+            "locale": "hi",
+            "template": "documented-authored-105c3d0aa9b15803a8ca"
+          },
+          "note": {
+            "text": "MCF संकुचन ≥ 30° या किसी भी IP संकुचन: उपचार का पारंपरिक संकेत (Hueston मानदंड)।",
+            "locale": "hi",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: MCF 40° + IFP 50° = 90° = estádio 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "कुल विस्तार कमी",
+                "locale": "hi",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "90°",
+                "locale": "hi",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  90
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "चरण 2: कुल कमी 45 से 90°",
+            "locale": "hi",
+            "template": "documented-authored-dc4747ff0773612a0009"
+          },
+          "note": {
+            "text": "MCF संकुचन ≥ 30° या किसी भी IP संकुचन: उपचार का पारंपरिक संकेत (Hueston मानदंड)।",
+            "locale": "hi",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "MCF 60° + IFP 70° + IFD 20° = 150° = estádio 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "कुल विस्तार कमी",
+                "locale": "hi",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "150°",
+                "locale": "hi",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "चरण 4: कुल कमी 135° से अधिक",
+            "locale": "hi",
+            "template": "documented-authored-692234ab026eb4cd0ae0"
+          },
+          "note": {
+            "text": "MCF संकुचन ≥ 30° या किसी भी IP संकुचन: उपचार का पारंपरिक संकेत (Hueston मानदंड)।",
+            "locale": "hi",
+            "template": "documented-authored-d6e74ada6ebebaf658a2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nódulo palmar sem contratura: estádio N",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "कुल विस्तार कमी",
+                "locale": "hi",
+                "template": "documented-authored-5fb7a0d9eeb83d712a24"
+              },
+              "value": {
+                "text": "0°",
+                "locale": "hi",
+                "template": "documented-authored-c0f52429373e565413cc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "चरण N: संकुचन के बिना नोड्यूल या कॉर्ड",
+            "locale": "hi",
+            "template": "documented-authored-6cd3ad3ae3f5f82544ba"
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}

@@ -76,3 +76,49 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Stadio 1: deficit totale da 0 a 45°
+
+| Dettagli del risultato | |
+| --- | --- |
+| Deficit totale di estensione | 30° |
+
+Contrattura della MCF ≥ 30° o qualsiasi contrattura della IFP: indicazione classica al trattamento (criterio di Hueston).
+
+
+### 2
+
+Stadio 2: deficit totale da 45 a 90°
+
+| Dettagli del risultato | |
+| --- | --- |
+| Deficit totale di estensione | 90° |
+
+Contrattura della MCF ≥ 30° o qualsiasi contrattura della IFP: indicazione classica al trattamento (criterio di Hueston).
+
+
+### 3
+
+Stadio 4: deficit totale superiore a 135°
+
+| Dettagli del risultato | |
+| --- | --- |
+| Deficit totale di estensione | 150° |
+
+Contrattura della MCF ≥ 30° o qualsiasi contrattura della IFP: indicazione classica al trattamento (criterio di Hueston).
+
+
+### 4
+
+Stadio N: nodulo o cordone senza contrattura
+
+| Dettagli del risultato | |
+| --- | --- |
+| Deficit totale di estensione | 0° |
+
